@@ -1,1 +1,1 @@
-web: gunicorn run:top --log-file -
+web: gunicorn run_it:top --log-file -
