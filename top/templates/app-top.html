@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/comps.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/extra.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/fontawesome-free-5.10.2-web/css/all.css') }}">
+
+</head>
+<body>
+<div id="container">
+    <div class="chart__component">
+        <section class="chart__wrap">
+            {% for k, v in product_dict.items() %}
+            <article class="chart__row">
+                <div class="offer__row">
+                    <div class="offer__row-top" data-product-id="{{v['data-product-id']}}">
+                        <!--TODO: optimize this part of code-->
+                        {% if v['priority'] == 1 %}
+                            <style>
+                                [data-product-id="{{v['data-product-id']}}"] .bb-ribbon.unicorn-ribbon{background: #0076fa;}
+                                [data-product-id="{{v['data-product-id']}}"] .bb-ribbon.unicorn-ribbon[class*="corner-"]:after{border-top: 22px solid #0076fa;border-right: 7px solid transparent;}
+                            </style>
+                            <div class="bb-ribbon unicorn-ribbon corner-left" style="text-transform: uppercase; white-space: nowrap;">
+                                <span class="bb-ribbon-content">Most Popular Choice</span>
+                            </div>
+                        {% endif %}
+                        {% if v['priority'] == 3 %}
+                            <style>
+                                [data-product-id="{{v['data-product-id']}}"] .bb-ribbon.unicorn-ribbon{background: #e9194c;}
+                                [data-product-id="{{v['data-product-id']}}"] .bb-ribbon.unicorn-ribbon[class*="corner-"]:after{ border-top: 22px solid #e9194c; border-right: 7px solid transparent; }
+                            </style>
+                            <div class="bb-ribbon unicorn-ribbon corner-left" style="text-transform: uppercase; white-space: nowrap;">
+                                <span class="bb-ribbon-content">Hot Dating Offer</span>
+                            </div>
+                        {% endif %}
+                        <div class="offer__row-offer__icon" data-pruduct-name="{{v['data-product-name']}}">
+                            <a href="{{v['url']}}" rel="nofollow" target="_blank"
+                               data-product-id="{{v['data-product-id']}}"
+                               data-pruduct-name="{{v['data-product-name']}}">
+                                <img src="./static/img/icons/logo_{{v['data-product-name']}}.png"
+                                     alt="{{v['data-product-name']}}" title="{{v['data-product-name']}}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer__row">
+                    <div class="offer__row-middle">
+                        <div class="free-text-feature v1" data-ni-auto-type="FreeTextFeature">{{v['data-product-feature']}}</div>
+                        <div class="free-text-feature v2" data-ni-auto-type="FreeTextFeature">Read Review</div>
+                    </div>
+                </div>
+                <div class="offer__row">
+                    <div class="offer__row-bottom">
+                        <div class="row__bottom-col-1">
+                            <div class="user-ratings-wrapper">
+                                <div class="rankit-disabled-earlier"
+                                     data-product-id="{{v['data-product-id']}}"
+                                     data-pruduct-name="{{v['data-product-name']}}">
+
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+
+                            </div>
+                            <div class="label-text">Rating</div>
+                        </div>
+                        <div class="row__bottom-col-2"></div>
+                        <div class="row__bottom-col-3"></div>
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </section>
+    </div>
+</div>
+
+</body>
+</html>

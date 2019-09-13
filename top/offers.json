@@ -1,0 +1,52 @@
+{
+  "offers": {
+    "flirt": {
+      "url": "http://qkage.abtrcker.com/c/379386c9a722ca9a?s1=flirt&s2={s2}&s3={s3}",
+      "priority": 1,
+      "data-product-id": 11,
+      "data-product-name": "flirt",
+      "data-product-feature": "Tons of matches based on your preferences",
+      "data-product-rating": 9.3
+    },
+    "benaughty": {
+      "url": "http://qkage.abtrcker.com/c/379386c9a722ca9a?s1=bn&s2={s2}&s3={s3}",
+      "priority": 4,
+      "data-product-id": 13,
+      "data-product-name": "bn",
+      "data-product-feature": "Making successful matches for over 20 years",
+      "data-product-rating": 8.3
+    },
+    "xmeets": {
+      "url": "http://qkage.abtrcker.com/c/379386c9a722ca9a?s1=xmeets&s2={s2}&s3={s3}",
+      "priority": 3,
+      "data-product-id": 14,
+      "data-product-name": "xmeets",
+      "data-product-feature": "The dating site to find chemistry that lasts",
+      "data-product-rating": 8.4
+    },
+    "xmilfs": {
+      "url": "http://qkage.abtrcker.com/c/379386c9a722ca9a?s1=xmilfs&s2={s2}&s3={s3}",
+      "priority": 5,
+      "data-product-id": 15,
+      "data-product-name": "xmilfs",
+      "data-product-feature": "Fun environment for younger men and older women",
+      "data-product-rating": 8.0
+    },
+    "cindymatches": {
+      "url": "http://qkage.abtrcker.com/c/379386c9a722ca9a?s1=cindymatches&s2={s2}&s3={s3}",
+      "priority": 6,
+      "data-product-id": 16,
+      "data-product-name": "cm",
+      "data-product-feature": "Dating site for 50+ singles looking for love",
+      "data-product-rating": 7.8
+    },
+    "hushlove": {
+      "url": "http://qkage.abtrcker.com/c/379386c9a722ca9a?s1=hushlove&s2={s2}&s3={s3}",
+      "priority": 2,
+      "data-product-id": 12,
+      "data-product-name": "hl",
+      "data-product-feature": "Enjoy meeting like-minded people",
+      "data-product-rating": 9.1
+    }
+  }
+}
